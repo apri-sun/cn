@@ -13,6 +13,10 @@ body{
 	border-radius: 5px;
 }
 
+h3{
+	font-weight: 400;
+}
+
 .main-body{
 	padding-top: 40px;
 	margin: 0 auto;
@@ -25,12 +29,58 @@ body{
 	border-radius: 3px;
 }
 
+.main-body-foot{
+	height: 30px;
+	margin-top: 15px;
+}
+
 .cut-off{
 	border-top: 1px solid #e8e8e8;
 }
 
+.main-body-button{
+	height: 40px;
+	margin-top: 15px;
+}
 
-input{
+.remember{
+	float: left;
+	font-weight: 200;
+}
+
+button{
+	cursor: pointer;
+	border-radius: 3px;
+	border: 0;
+	box-shadow: none;
+	background-color: #00bc9b;
+	width: 145px;
+	height: 40px;
+}
+
+button:hover{
+	background-color: #00b091;
+}
+
+.login{
+	float: left;
+}
+
+.register{
+	float: right;
+}
+
+.cant{
+	color: inherit;
+	float: right;
+	text-decoration: none;
+}
+
+.cant:hover{
+	color: #00BC9B;
+}
+
+[type="text"]{
 	border: 0;
 	padding: 1em .8em;
 	box-sizing: border-box;
