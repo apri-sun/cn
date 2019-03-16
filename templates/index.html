@@ -2,8 +2,39 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>首页</title>
+		<link rel="shortcut icon" type="image/x-icon" href="../static/images/logo_favicon.ico" />
+		<link rel="stylesheet" href="../static/style/index.css" />
 	</head>
 	<body>
+		<div class="navigation-head">
+			<div class="navigation-container" align="center">
+				<a class="logo" href="#"><img src="../static/images/logo.jpg"/></a>
+				<div class="button-head">
+					<a href="#">首页</a>
+					<a href="#">发现</a>
+					<a href="#">消息</a>
+				</div>
+				<div class="search-head">
+					<div>
+						<input type="text" placeholder="搜索你感兴趣的内容..." />
+						<button>
+							<img src="../static/images/查找.svg" />
+						</button>
+					</div>
+				</div>
+				<div class="information-head">
+					
+				</div>
+			</div>
+		</div>
+		<div></div>
 	</body>
 </html>
+<script type="text/javascript" src="../static/script/jquery-3.3.1.min.js" ></script>
+<script>
+	$(function(){
+		$("body").width($(window).width());
+		$("body").height($(window).height());
+	});
+</script>

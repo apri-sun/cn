@@ -7,5 +7,4 @@ $(function(){
 			console.log($("[name='account']").val("请输入用户名"));
 		}
 	});
-	
 });

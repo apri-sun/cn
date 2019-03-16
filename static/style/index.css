@@ -1,0 +1,86 @@
+body{
+	margin: 0px;
+	background: #f7fafc;
+}
+
+a{
+	text-decoration: none;
+}
+
+.navigation-head{
+	position: fixed;
+	width: 100%;
+	height: 52px;
+	background-color: #FFFFFF;
+}
+
+.navigation-container{
+	margin: 0 auto;
+	width: 960px;
+	height: 52px;
+}
+
+.logo img{
+	width: 50px;
+	height: 50px;	
+}
+
+.logo{
+	float: left;
+}
+
+.button-head{
+	float: left;
+}
+
+.button-head a{
+	line-height: 52px;
+	margin-left: 30px;
+	font-size: 18px;
+	color: #8590A6;
+}
+
+.button-head a:hover{
+	color: #555;
+}
+
+.search-head{
+	float: left;
+	height: 52px;
+}
+
+.search-head div{
+	float: left;
+	margin-left: 30px;
+	margin-top: 8px;
+}
+
+.search-head div [type="text"]{
+	float: left;
+	width: 280px;
+	height: 34px;
+	box-sizing: border-box;
+	box-shadow: none;
+	outline: #fff;
+	border: 0;
+	padding-left: 10px;
+	background-color: #eee5;
+}
+
+.search-head div button{
+	background-color: #fff;
+	float: left;
+	width: 36px;
+	height: 36px;
+	box-sizing: border-box;
+	box-shadow: none;
+	outline: #fff;
+	border: 0;
+	box-shadow: none;
+	background-color: #eee5;
+}
+
+.search-head div button img{
+	width: 21px;
+	height: 21px;
+}
