@@ -68,19 +68,43 @@ a{
 }
 
 .search-head div button{
-	background-color: #fff;
 	float: left;
-	width: 36px;
-	height: 36px;
+	width: 34px;
+	height: 34px;
 	box-sizing: border-box;
 	box-shadow: none;
 	outline: #fff;
 	border: 0;
 	box-shadow: none;
 	background-color: #eee5;
+	cursor: pointer;
 }
 
 .search-head div button img{
 	width: 21px;
 	height: 21px;
+}
+
+.information-head{
+	float: right;
+	margin-top: 8px;
+}
+
+.information-head button{
+	float: right;
+	width: 60px;
+	height: 34px;
+	outline: #fff;
+	border: 0;
+	background-color: #00BC9B;
+	border-radius: 3px;
+	color: #fff;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+.information-head img{
+	float: right;
+	border-radius: 3px;
+	cursor: pointer;
 }
