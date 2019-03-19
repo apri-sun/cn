@@ -29,7 +29,74 @@
 				</div>
 			</div>
 		</div>
-		<div></div>
+		<div class="main-body">
+			<div class="main-body-head">
+				<div class="main-body-head-left">
+					<img src="../static/images/编辑.svg" />
+					最新动态
+				</div>
+				<div class="main-body-head-right">
+					<img src="../static/images/设置.svg" />
+					设置
+				</div>
+			</div>
+			<div class="main-body-body">
+				<div class="items">
+					<div class="items-left">
+						<img src="../static/images/chathead.jpg" />
+						<button>1082</button>
+					</div>
+					<div class="items-right">
+						<div class="items-right-head">
+							热门文章<br />
+							<a href="#">电动力学</a>
+						</div>
+						<div class="items-right-body">
+							<a href="#">赵永峰</a>,<span class="title">To science</span>
+							<div class="text-part">
+								电动力学的推荐书是两本：1、Griffiths《Introduction to Electrodynamics》。
+								Griffiths的教材都很经典，这本也不例外。讲得很清楚，也很容易入手。
+								不过国内的学生读起来可能会感觉过于简单，其实大部分内容很接近一般普物电磁学
+								教材的难度，但是数学更严格…
+								<a href="#">显示全部</a>
+							</div>
+						</div>
+						<div class="items-right-foot">
+							<a href="#"><img src="../static/images/喜欢.svg" />关注专栏</a>
+							<a href="#"><img src="../static/images/消息.svg" />100 条评论</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="items">
+					<div class="items-left">
+						<img src="../static/images/chathead.jpg" />
+						<button>1082</button>
+					</div>
+					<div class="items-right">
+						<div class="items-right-head">
+							热门文章<br />
+							<a href="#">电动力学</a>
+						</div>
+						<div class="items-right-body">
+							<a href="#">赵永峰</a>,<span class="title">To science</span>
+							<div class="text-part">
+								电动力学的推荐书是两本：1、Griffiths《Introduction to Electrodynamics》。
+								Griffiths的教材都很经典，这本也不例外。讲得很清楚，也很容易入手。
+								不过国内的学生读起来可能会感觉过于简单，其实大部分内容很接近一般普物电磁学
+								教材的难度，但是数学更严格…
+								<a href="#">显示全部</a>
+							</div>
+						</div>
+						<div class="items-right-foot">
+							<a href="#"><img src="../static/images/喜欢.svg" />关注专栏</a>
+							<a href="#"><img src="../static/images/消息.svg" />100 条评论</a>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
 	</body>
 </html>
 <script type="text/javascript" src="../static/script/jquery-3.3.1.min.js" ></script>
@@ -38,8 +105,20 @@
 		$("body").width($(window).width());
 		$("body").height($(window).height());
 		
-		$(".information-head img").mouseenter(function(){
-			
+		$(".information-head img").click(function(){
+			if($(".list").css("display") == "none"){
+				$(".list").css("display","block");
+			}else{
+				$(".list").css("display","none");
+			}
 		});
+		
 	});
 </script>
+
+<!--隐藏的下拉菜单-->
+<div class="list">
+	<a href="#"><img src="../static/images/我的.svg" />我的主页</a>
+	<a href="#"><img src="../static/images/设置.svg" />设置</a>
+	<a href="#"><img src="../static/images/开关.svg" />退出</a>
+</div>
