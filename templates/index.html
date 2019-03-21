@@ -186,7 +186,6 @@
 <script>
 	$(function(){
 		$("body").width($(window).width());
-		$("body").height($(window).height());
 		$(".main-body").width($(window).width());
 		
 		$(".information-head img").click(function(){
@@ -216,10 +215,12 @@
 </script>
 
 <!--隐藏的下拉菜单-->
-<div class="list">
-	<a href="#"><img src="../static/images/我的.svg" />我的主页</a>
-	<a href="#"><img src="../static/images/设置.svg" />设置</a>
-	<a href="#"><img src="../static/images/开关.svg" />退出</a>
+<div class="list-container">
+	<div class="list">
+		<a href="#"><img src="../static/images/我的.svg" />我的主页</a>
+		<a href="#"><img src="../static/images/设置.svg" />设置</a>
+		<a href="#"><img src="../static/images/开关.svg" />退出</a>
+	</div>
 </div>
 <!--隐藏的modal框-->
 <div class="modal">
