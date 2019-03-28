@@ -29,13 +29,36 @@ h3{
 	border-radius: 3px;
 }
 
+.main-body-input .username{
+	position: relative;
+}
+
+.main-body-input .username .error{
+	position: absolute;
+	top: 10px;
+	right: -60px;
+	background-color: #fff;
+	color: #CC3333;
+	opacity: 0;
+}
+
 .main-body-foot{
 	height: 30px;
 	margin-top: 15px;
 }
 
 .cut-off{
+	position: relative;
 	border-top: 1px solid #e8e8e8;
+}
+
+.main-body-input .cut-off .error{
+	position: absolute;
+	top: 10px;
+	right: -60px;
+	background-color: #fff;
+	color: #c33;
+	opacity: 0;
 }
 
 .main-body-button{
