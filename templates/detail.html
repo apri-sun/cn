@@ -10,6 +10,15 @@
 		<!--顶部导航条-->
 		<div class="navigation-head">
 			<div class="navigation-container" align="center">
+				<div class="like-button-hide">
+					<button id="up">
+						<i>&#9650</i>
+						<span>28</span>
+					</button>
+					<button id="down">
+						<i>&#9660</i>
+					</button>
+				</div>
 				<a class="logo" href="#"><img src="../static/images/logo.jpg"/></a>
 				<div class="button-head">
 					<a href="#">首页</a>
@@ -98,6 +107,15 @@
 								<a href="#">
 									<span>28</span>&nbsp;人赞同
 								</a>
+							</div>
+							<div class="like-button">
+								<button id="up">
+									<i>&#9650</i>
+									<span>28</span>
+								</button>
+								<button id="down">
+									<i>&#9660</i>
+								</button>
 							</div>
 						</div>
 						<div class="main-text-body">
@@ -418,8 +436,21 @@
 		//发布问题按钮绑定事件
 		$(".editer-area-foot span button").click(function(){
 			var text = doc.body.innerHTML;
+			console.log(text)
 		});
 		
+		//侧边点赞栏设置
+		$(window).scroll(function(){ //窗口滚动监听
+			if($(window).scrollTop()>310){
+				$(".like-button-hide").css({
+					"display":"block",
+				});
+			}if($(window).scrollTop()<310){
+				$(".like-button-hide").css({
+					"display":"none",
+				});
+			}
+		});
 		
 	});
 </script>

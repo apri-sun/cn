@@ -37,6 +37,13 @@ a{
 	float: left;
 }
 
+/*隐藏的点赞栏*/
+.like-button-hide{
+	position: absolute;
+	display: none;
+	top: 60px;
+}
+
 .button-head a{
 	line-height: 52px;
 	margin-left: 30px;
@@ -401,6 +408,50 @@ h2{
 
 .like-number a:hover{
 	color: #25BB9B;
+}
+
+/*侧边的点赞按钮进行设置*/
+.like-button{
+	position: relative;
+	bottom: 45px;
+	right: 50px;
+	width: 38px;
+	height: 73px;
+}
+
+#up{
+	display: block;
+	border-radius: 3px;
+	background-color: #EFF6FA;
+	color: #25BB9B;
+	outline: #fff;
+	border: none;
+	cursor: pointer;
+	height: 44px;
+	width: 38px;
+	
+}
+
+#up:hover{
+	background-color: #25BB9B;
+	color: #fff;
+}
+
+#down{
+	border-radius: 3px;
+	background-color: #EFF6FA;
+	color: #25BB9B;
+	outline: #fff;
+	border: none;
+	cursor: pointer;
+	height: 24px;
+	width: 38px;
+	margin-top: 5px;
+}
+
+#down:hover{
+	background-color: #25BB9B;
+	color: #fff;
 }
 
 /*文章内容主要部分*/
