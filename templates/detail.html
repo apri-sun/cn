@@ -229,8 +229,46 @@
 							</div>
 							<div class="main-text-body-foot">
 								<a href="#">发布于 2015-10-8</a>
-								<a href="#"><img src="../static/images/消息.svg" /><span>4</span>条评论</a>
-								<a href="#"><img src="../static/images/heart.svg" />感谢</a>
+								<a href="#" class="ddd"><img src="../static/images/消息.svg" /><span>4</span>条评论</a>
+								<a href="#" class="ddd"><img src="../static/images/heart.svg" />感谢</a>
+							</div>
+						</div>
+					</div>
+					<!--富文本编辑器区域-->
+					<div class="editer-area">
+						<div class="editer-area-container">
+							<div class="editer-area-head">
+								<a href="#">胡源</a>
+								<label><img src="../static/images/edit.svg" />填写话题经验提升话题可信度</label>
+								<a href="#"><img src="../static/images/da8e974dc_is.jpg" /></a>
+							</div>
+							<div class="editer">
+								<div class="editer-head">
+									<div id="bold">
+										<img src="../static/images/bold1.svg" />
+									</div>
+									<div id="italic">
+										<img src="../static/images/italic1.svg" />
+									</div>
+									<div id="underline">
+										<img src="../static/images/underline1.svg" />
+									</div>
+								</div>
+								<iframe id="editer-body">
+									
+								</iframe>
+							</div>
+							<div class="editer-area-foot">
+								<span style="width:65px;border-right: 1px solid #ccc;margin-right: 15px;">
+									<input type="checkbox" />匿名
+								</span>
+								<span>
+									<input type="checkbox" />未经许可,禁止转载
+									<img src="../static/images/question-circle-fill.svg" />
+								</span>
+								<span>
+									<button>发布回答</button>
+								</span>
 							</div>
 						</div>
 					</div>
@@ -301,6 +339,87 @@
 				return false;
 			}
 		});
+		
+		//富文本编辑器
+		var body = document.getElementById("editer-body").contentWindow;//获取iframe 的window对象
+		var doc = document.getElementById("editer-body").contentDocument;//获取iframe 的document对象
+		var $doc =$(doc);
+		
+		body.document.contentEditable = true; //设置元素可编辑
+		body.document.designMode = "on"; //打开设计模式
+		
+		//计数器
+		var boldc = 0;
+		var italicc = 0;
+		var underlinec = 0;
+		
+		//判断电机的是哪个图标
+		$(".editer-head div").click(function(){
+			var kind = $(this).attr("id");
+			if(kind == "bold"){
+				boldc++;
+				body.document.execCommand("bold",false,null);
+				if(boldc%2 == 1){
+					$(this).css({
+						"border":"1px solid #C1C1C1",
+						"background-color":"#ebebeb",
+						"box-shaow":"0 0 3px rgba(0,0,0,.1) inset",
+					});
+				}else{
+					$(this).css({
+						"border":"1px solid transparent",
+						"background":"#f1f1f1",
+						"box-shaow":"none",
+					});
+				}
+			}if(kind == "italic"){
+				italicc++;
+				body.document.execCommand("italic",false,null);
+				if(italicc%2 == 1){
+					$(this).css({
+						"border":"1px solid #C1C1C1",
+						"background-color":"#ebebeb",
+						"box-shaow":"0 0 3px rgba(0,0,0,.1) inset",
+					});
+				}else{
+					$(this).css({
+						"border":"1px solid transparent",
+						"background":"#f1f1f1",
+						"box-shaow":"none",
+					});
+				}
+			}if(kind == "underline"){
+				underlinec++;
+				body.document.execCommand("underline",false,null);
+				if(underlinec%2 == 1){
+					$(this).css({
+						"border":"1px solid #C1C1C1",
+						"background-color":"#ebebeb",
+						"box-shaow":"0 0 3px rgba(0,0,0,.1) inset",
+					});
+				}else{
+					$(this).css({
+						"border":"1px solid transparent",
+						"background":"#f1f1f1",
+						"box-shaow":"none",
+					});
+				}
+			}
+		});
+		
+		//修改富文本编辑区域底部的问号
+		$(".editer-area-foot span img").mouseenter(function(){
+			$(".editer-area-foot span img").attr("src","../static/images/question-circle-fill1.svg");
+		});
+		$(".editer-area-foot span img").mouseout(function(){
+			$(".editer-area-foot span img").attr("src","../static/images/question-circle-fill.svg");
+		});
+		
+		//发布问题按钮绑定事件
+		$(".editer-area-foot span button").click(function(){
+			var text = doc.body.innerHTML;
+		});
+		
 		
 	});
 </script>
