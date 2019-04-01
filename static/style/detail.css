@@ -101,7 +101,7 @@ a{
 	margin-top: 8px;
 }
 
-.information-head button{
+.information-head .ask{
 	float: right;
 	width: 60px;
 	height: 34px;
@@ -154,8 +154,45 @@ a{
 	margin-right: 6px;
 }
 
+/*对隐藏的收起栏进行设置*/
+.pack-up button{
+	border: none;
+	height: 23px;
+	width: 51px;
+	background-color: #25BB9B;
+	color: #FFFFFF;
+	border-radius: 3px;
+	position: relative;
+	left: 20px;
+}
+
+
+/*对隐藏的返回顶部栏进行设置*/
+.to-top{
+	display: none;
+	position: fixed;
+	right: 100px;
+	bottom: 100px;
+}
+
+.to-top button{
+	border-radius: 3px;
+	border: none;
+	outline: #fff;
+	cursor: pointer;
+	width: 38px;
+	height: 38px;
+	padding: 0;
+}
+
+.to-top img{
+	width: 38px;
+	height: 38px;
+}
+
 /*对隐藏的modal框进行设置*/
 .modal{
+	z-index: 3;
 	display: none;
 	position: fixed;
 	top: 0;

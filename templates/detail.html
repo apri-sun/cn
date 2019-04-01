@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="../static/style/detail.css" />
 	</head>
 	<body>
+		<a id="anchor-top"></a>
 		<!--顶部导航条-->
 		<div class="navigation-head">
 			<div class="navigation-container" align="center">
@@ -35,12 +36,16 @@
 				</div>
 				<div class="information-head">
 					<img id="mylogo" src="../static/images/da8e974dc_is.jpg" />
-					<button>提问</button>
+					<button class="ask">提问</button>
 					<!--隐藏的下拉菜单-->
 					<div class="list">
 						<a href="#"><img src="../static/images/我的.svg" />我的主页</a>
 						<a href="#"><img src="../static/images/设置.svg" />设置</a>
 						<a href="#"><img src="../static/images/开关.svg" />退出</a>
+					</div>
+					<!--隐藏的收起文章-->
+					<div class="pack-up">
+						<button>收起</button>
 					</div>
 				</div>
 			</div>
@@ -315,7 +320,7 @@
 		});
 
 		//模态框点击事件
-		$(".information-head button").click(function(){
+		$(".information-head .ask").click(function(){
 			$("body").css("overflow","hidden");
 			$(".modal").width($(window).width());
 			$(".modal").height($(window).height());
@@ -371,7 +376,7 @@
 		var italicc = 0;
 		var underlinec = 0;
 		
-		//判断电机的是哪个图标
+		//判断点击的是哪个图标
 		$(".editer-head div").click(function(){
 			var kind = $(this).attr("id");
 			if(kind == "bold"){
@@ -452,6 +457,51 @@
 			}
 		});
 		
+		//收起按钮设置
+		var ym = $(window).height();
+		var ar = ym-$(".navigation-head").height()-$(".pack-up button").height();
+		$(".pack-up button").css("top",ym).animate({
+			top:ar,
+		});
+		var no = $(".main-container").height()-$(".editer-area").height()-$(window).height();
+		$(window).scroll(function(){
+			if($(window).scrollTop()>no && $(".main-text-body-container").css("display") != "none"){
+				$(".pack-up button").css({
+					"display":"none",
+				});
+			}if($(window).scrollTop()<no && $(".main-text-body-container").css("display") != "none"){
+				$(".pack-up button").css({
+					"display":"block",
+				});
+			}if($(window).scrollTop()<no && $(".main-text-body-container").css("display") == "none"){
+				$(".pack-up button").text("展开");
+			}
+		});
+		$(".pack-up button").click(function(){
+			if($(".pack-up button").text() == "收起"){
+				$(".main-text-body-container").hide();
+				$(".pack-up button").text("展开");
+				return false;
+			}
+			if($(".pack-up button").text() == "展开"){
+				$(".main-text-body-container").show();
+				$(".pack-up button").text("收起");
+				return false;
+			}
+		});
+		
+		//返回顶部按钮
+		$(window).scroll(function(){
+			if($(window).scrollTop()>$(window).height()){
+				$(".to-top").css("display","block");
+			}if($(window).scrollTop()<$(window).height()){
+				$(".to-top").css("display","none");
+			}
+		});
+		$(".to-top button").click(function(){
+			$("html").animate({scrollTop:$("#anchor-top").offset().top},300); //实现点击后滚动到锚点anchor-top的功能
+		});
+		
 	});
 </script>
 <!--隐藏的modal框-->
@@ -459,4 +509,8 @@
 	<div class="modal-container">
 		
 	</div>
+</div>
+<!--回到顶部按钮-->
+<div class="to-top">
+	<button><img src="../static/images/up.svg" /></button>
 </div>
