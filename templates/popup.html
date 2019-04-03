@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>现在的 微博里僵尸和水军泛滥</title>
+		<link rel="stylesheet" href="../static/style/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../static/style/BS.css" />
+		<style>
+			body{
+				background: rgb(246,246,246);
+			}
+			.container-ask{
+				position: absolute;
+				top: 10%;
+				left: 5%;
+			}
+			.container-letter{
+				position: absolute;
+				top: 10%;
+				left: 50%;
+			}
+			.modal-dialog{
+				margin-top: 0px;
+			}
+			.page-header{
+				border-bottom: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container-ask">
+			<div class="page-header">
+				<!-- 静态模态框 官方有一个bug就是在写静态框的时候在按钮上要绑定同一个class-->
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close myclose" data-dismiss="modal">
+                                <span>&times;</span>
+                           </button>
+							<h5 class="modal-title" id="exampleModalLabel">提问</h5>
+						</div>
+						<!-- body部分 -->
+						<div class="modal-body">
+							<form>
+								<div class="form-group">
+									<input type="text" class="form-control" id="recipient-name" placeholder="写下你的问题">
+								</div>
+								<div class="form-group">
+									<label for="message-text" class="control-label">问题说明(可选):</label>
+									<div class="test-textarea" contenteditable="true"><br /></div>
+								</div>
+							</form>
+						</div>
+						<!-- footer部分 -->
+						<div class="modal-footer">
+							<button class="btn btn-info myclose" data-dismiss="modal">取消</button>
+							<button class="btn btn-primary myclose">发布</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container-letter">
+			<div class="page-header">
+				<!-- 静态模态框 官方有一个bug就是在写静态框的时候在按钮上要绑定同一个class-->
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close myclose" data-dismiss="modal">
+                                <span>&times;</span>
+                           </button>
+							<h5 class="modal-title" id="exampleModalLabel">发送私信</h5>
+						</div>
+						<!-- body部分 -->
+						<div class="modal-body">
+							<form>
+								<div class="form-group">
+									<label for="recipient-name" class="control-label">发给:</label>
+									<input type="text" class="form-control" id="recipient-name" placeholder="姓名">
+								</div>
+								<div class="form-group">
+									<label for="message-text" class="control-label">内容:</label>
+									<div class="test-textarea" contenteditable="true"><br /></div>
+								</div>
+							</form>
+						</div>
+						<!-- footer部分 -->
+						<div class="modal-footer">
+							<button class="btn btn-info myclose" data-dismiss="modal">取消</button>
+							<button class="btn btn-primary myclose">发布</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+
+</html>
+<script type="text/javascript" src="../static/script/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../static/script/bootstrap.min.js"></script>
