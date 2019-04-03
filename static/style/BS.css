@@ -1,0 +1,48 @@
+.modal-header {
+	background-color: #0084ff;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	height: 40px;
+}
+
+.btn-primary {
+	background: #0084ff;
+}
+
+.modal-dialog {
+	border-radius: 5px;
+}
+
+.close {
+	margin-right: 7px;
+}
+
+.modal-title {
+	color: white;
+	line-height: 40px;
+	margin-left: 15px;
+}
+
+.modal .fade .in {
+	position: absolute;
+	top: 200px;
+}
+
+.test-textarea {
+	width: 568px;
+	min-height: 80px;
+	line-height: 20px;
+	_height: 30px;
+	/* max-height: 150px;*/
+	margin-left: auto;
+	margin-right: auto;
+	padding: 3px;
+	outline: 0;
+	border: 1px solid #ccc;
+	font-size: 13px;
+	word-wrap: break-word;
+	overflow-x: hidden;
+	overflow-y: auto;
+	-webkit-user-modify: read-write-plaintext-only;
+	border-radius: 4px;
+}

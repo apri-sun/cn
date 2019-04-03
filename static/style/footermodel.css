@@ -1,0 +1,36 @@
+.follow-footer,
+.follow-footer a {
+	color: #999999;
+}
+
+.follow-footer {
+	width: 100%;
+	clear: both;
+	text-align: right;
+}
+
+.footer-content {
+	padding: 20px 15px;
+	border-top: 1px solid #ccc;
+	width: 960px;
+	margin: 0 auto;
+	clear: both;
+}
+
+.follow-footer ul,
+.follow-footer li {
+	display: inline;
+}
+
+.follow-footer li {
+	list-style: none;
+	padding-left: 7px;
+}
+
+.follow-footer li:hover {
+	text-decoration: underline;
+}
+
+#copy {
+	float: left;
+}

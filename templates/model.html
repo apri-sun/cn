@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="../static/style/navmodel.css" />
+		<link rel="stylesheet" type="text/css" href="../static/style/footermodel.css" />
+		<link rel="stylesheet" type="text/css" href="../static/style/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../static/style/BS.css" />
+	</head>
+
+	<body>
+		<div class="index-header">
+			<div class="index-wrap">
+				<a href="" class="index-logo"></a>
+				<div class="index-search">
+					<form action="" method="get" class="search-form">
+						<input type="text" class="search-box" name="" id="" placeholder="搜索你感兴趣的内容..." />
+						<button type="submit" class="search-button">
+							<span class="search-img"></span>
+						</button>
+					</form>
+				</div>
+				<div class="index-nav">
+					<ul>
+						<li class="nav-mainpage nav-li">
+							<a href="" class="nav-link">首页</a>
+						</li>
+						<li class="nav-li">
+							<a href="" class="nav-link nav-other-link">发现</a>
+						</li>
+						<li class="nav-li">
+							<a href="" class="nav-link nav-other-link" data-toggle="modal" data-target="#message">消息</a>
+						</li>
+					</ul>
+				</div>
+				<div class="index-user menu">
+					<ul>
+						<li>
+							<a href="" class="user-info">
+								<span>牛客</span>
+								<span class="user-portrait"></span>
+							</a>
+							<ul class="nav-dropdown">
+								<li class="sec-nav">
+									<a href="" class="btn-hover"><i class="nav-home nav-icon"></i>我的主页</a>
+								</li>
+								<li class="sec-nav">
+									<a href="" class="btn-hover"><i class="nav-mess nav-icon"></i>私信</a>
+								</li>
+								<li class="sec-nav last-nav">
+									<a href="" class="bottom-radius btn-hover"><i class="nav-out nav-icon"></i>退出</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<button type="button" class="index-question" data-toggle="modal" data-target="#exampleModal">提问</button>
+			</div>
+		</div>
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h5 class="modal-title" id="exampleModalLabel">提问</h5>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label for="recipient-name" class="control-label">标题:</label>
+								<input type="text" class="form-control" id="recipient-name">
+							</div>
+							<div class="form-group">
+								<label for="message-text" class="control-label">问题说明(可选):</label>
+								<div class="test-textarea" contenteditable="true"><br /></div>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+						<button type="button" class="btn btn-primary">发布</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="message" tabindex="-1" role="dialog" aria-labelledby="messageLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h5 class="modal-title" id="exampleModalLabel">消息</h5>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label for="recipient-name" class="control-label">接收人:</label>
+								<input type="text" class="form-control" id="recipient-name">
+							</div>
+							<div class="form-group">
+								<label for="message-text" class="control-label">内容:</label>
+								<div class="test-textarea" contenteditable="true"><br /></div>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary">发送</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="">
+
+		</div>
+		<div class="follow-footer">
+			<div class="footer-content">
+				<ul>
+					<li>
+						<a href="">建议反馈</a>
+					</li>
+					<li>
+						<a href="">加入我们</a>
+					</li>
+					<li>
+						<a href="">合作建议</a>
+					</li>
+					<li>
+						<a href="">联系我们</a>
+					</li>
+				</ul>
+				<span id="copy">© Copyright 2019 47056. All Rights Reserved. </span>
+			</div>
+		</div>
+		<script src="../static/script/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/script/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

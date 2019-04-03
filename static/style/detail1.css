@@ -1,40 +1,5 @@
-body{
-	margin: 0px;
-	float: left;
-	display: flex;
-	justify-content: center;
-}
-
 a{
 	text-decoration: none;
-}
-
-.navigation-head{
-	z-index: 2;
-	position: fixed;
-	width: 100%;
-	height: 52px;
-	background-color: #FFFFFF;
-	border-bottom: 1px solid #aaa5;
-}
-
-.navigation-container{
-	margin: 0 auto;
-	width: 960px;
-	height: 52px;
-}
-
-.logo img{
-	width: 50px;
-	height: 50px;	
-}
-
-.logo{
-	float: left;
-}
-
-.button-head{
-	float: left;
 }
 
 /*隐藏的点赞栏*/
@@ -43,129 +8,6 @@ a{
 	display: none;
 	top: 60px;
 }
-
-.button-head a{
-	line-height: 52px;
-	margin-left: 30px;
-	font-size: 18px;
-	color: #8590A6;
-}
-
-.button-head a:hover{
-	color: #555;
-}
-
-.search-head{
-	float: left;
-	height: 52px;
-}
-
-.search-head div{
-	float: left;
-	margin-left: 30px;
-	margin-top: 8px;
-}
-
-.search-head div [type="text"]{
-	float: left;
-	width: 280px;
-	height: 34px;
-	box-sizing: border-box;
-	box-shadow: none;
-	outline: #fff;
-	border: 0;
-	padding-left: 10px;
-	background-color: #eee5;
-}
-
-.search-head div button{
-	float: left;
-	width: 34px;
-	height: 34px;
-	box-sizing: border-box;
-	box-shadow: none;
-	outline: #fff;
-	border: 0;
-	box-shadow: none;
-	background-color: #eee5;
-	cursor: pointer;
-}
-
-.search-head div button img{
-	width: 21px;
-	height: 21px;
-}
-
-.information-head{
-	float: right;
-	margin-top: 8px;
-}
-
-.information-head .ask{
-	float: right;
-	width: 60px;
-	height: 34px;
-	outline: #fff;
-	border: 0;
-	background-color: #0084ff;
-	border-radius: 3px;
-	color: #fff;
-	margin-right: 20px;
-	cursor: pointer;
-}
-
-.information-head .ask:hover{
-	background-color: #00B091;
-}
-
-.information-head img{
-	float: right;
-	border-radius: 3px;
-	cursor: pointer;
-}
-
-/*对隐藏的菜单栏进行设置*/
-.information-head .list{
-	position: relative;
-	top: 20px;
-	left: 40px;
-	height: 122px;
-	width: 120px;
-	background-color: #FFFFFF;
-	display: none;
-}
-
-.information-head .list a{
-	background-color: #fff;
-	padding-left: 15px;
-	display: flex;
-	align-items: center;
-	height: 40px;
-	color: #8590A6;
-}
-
-.information-head .list a:hover{
-	background-color: #ddd;
-}
-
-.information-head .list a img{
-	width: 20px;
-	height: 20px;
-	margin-right: 6px;
-}
-
-/*对隐藏的收起栏进行设置*/
-.pack-up button{
-	border: none;
-	height: 23px;
-	width: 51px;
-	background-color: #25BB9B;
-	color: #FFFFFF;
-	border-radius: 3px;
-	position: relative;
-	left: 20px;
-}
-
 
 /*对隐藏的返回顶部栏进行设置*/
 .to-top{
@@ -190,36 +32,28 @@ a{
 	height: 38px;
 }
 
-/*对隐藏的modal框进行设置*/
-.modal{
-	z-index: 3;
-	display: none;
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: rgba(26, 26, 26, 0.65);
-}
-
-.modal-container{
-	display: none;
+/*对隐藏的收起栏进行设置*/
+.pack-up button{
+	border: none;
+	height: 23px;
+	width: 51px;
+	background-color: #0084ff;
+	color: #FFFFFF;
+	border-radius: 3px;
 	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: #fff;
-	width: 550px;
-	height: 250px;
-	border-radius: 5px;
+	left: 20px;
 }
 
 
 /*对主页面进行设置*/
 .main-body{
-	width: 100%;
-	margin-top: 70px;
+	width: 1000px;
+	height: auto;
+	margin: 70px auto;
+	background-color: #fff;
 	display: flex;
 	justify-content: center;
+	box-shadow: 0 1px 3px rgba(26,26,26,.1); 
 }
 
 .main-container{
@@ -227,6 +61,7 @@ a{
 }
 
 .main-container-right{
+	margin-top: 15px;
 	margin-left: 48px;
 	width: 912px;
 }
@@ -236,16 +71,15 @@ a{
 }
 
 .lables a{
-	background-color: #eff6fa;
+	background-color: #e5f2ff;
 	font-size: 13px;
 	padding: 3px 10px 3px 10px;
-	color: #25bb9b;
+	color: #0084ff;
 	border-radius: 15px;
 }
 
 .lables a:hover{
-	background-color: #25bb9b;
-	color: #fff;
+	background-color: rgb(217,237,255);
 }
 
 /*修改按钮样式*/
@@ -298,7 +132,7 @@ h2{
 .watch-list .setAndfocus button{
 	width: 80px;
 	height: 34px;
-	background: linear-gradient(to bottom,#25bb9b,#00B091);
+	background: #0084ff;
 	color: #fff;
 	border: none;
 	border-radius: 3px;
@@ -325,7 +159,6 @@ h2{
 .setting img{
 	height: 20px;
 	width: 20px;
-	padding: 8px;
 }
 
 /*主页面中隐藏的菜单栏*/
@@ -334,8 +167,6 @@ h2{
 	top: 40px;
 	left: 100px;
 	display: none;
-	height: 80px;
-	width: 110px;
 	border: solid 1px #ccc;
 	border-radius: 3px;
 }
@@ -387,11 +218,7 @@ h2{
 }
 
 .focusNumber a{
-	color: #25BB9B;
-}
-
-.focusNumber a:active{
-	color: #25BB9B;
+	color: #0084ff;
 }
 
 /*关注者*/
@@ -459,8 +286,8 @@ h2{
 #up{
 	display: block;
 	border-radius: 3px;
-	background-color: #EFF6FA;
-	color: #25BB9B;
+	background-color: #e5f2ff;
+	color: #0084ff;
 	outline: #fff;
 	border: none;
 	cursor: pointer;
@@ -470,14 +297,14 @@ h2{
 }
 
 #up:hover{
-	background-color: #25BB9B;
+	background-color: #0084ff;
 	color: #fff;
 }
 
 #down{
 	border-radius: 3px;
-	background-color: #EFF6FA;
-	color: #25BB9B;
+	background-color: #e5f2ff;
+	color: #0084ff;
 	outline: #fff;
 	border: none;
 	cursor: pointer;
@@ -487,7 +314,7 @@ h2{
 }
 
 #down:hover{
-	background-color: #25BB9B;
+	background-color: #0084ff;
 	color: #fff;
 }
 
@@ -522,7 +349,7 @@ h2{
 /*富文本编辑器区域 信息*/
 .editer-area{
 	margin-top: 25px;
-	padding-bottom: 80px;
+	padding-bottom: 40px;
 }
 
 .editer-area-head{
@@ -530,7 +357,7 @@ h2{
 }
 
 .editer-area-head a{
-	color: #25BB9B;
+	color: #0084ff;
 	font-weight: 700;
 	font-size: 13px;
 }
@@ -557,7 +384,7 @@ h2{
 	display: flex;
 	align-items: center;
 	background: #f1f1f1;
-	width: 882px;
+	width: 909px;
 	height: 37px;
 	border-bottom: 1.5px solid #ccc;
 	padding-left: 15px;
@@ -614,7 +441,7 @@ h2{
 .editer-area-foot span button{
 	width: 78px;
 	height: 34px;
-	background: linear-gradient(to bottom,#25bb9b,#00B091);
+	background: #0084ff;
 	border: none;
 	border-radius: 3px;
 	outline: #fff;
