@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="../static/style/navmodel.css" />
+		<link rel="stylesheet" type="text/css" href="../static/style/footermodel.css" />
+		<link rel="stylesheet" type="text/css" href="../static/style/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../static/style/BS.css" />
+		<link rel="stylesheet" href="../static/style/mypage.css" />
+	</head>
+
+	<body>
+		<div class="index-header">
+			<div class="index-wrap">
+				<a href="" class="index-logo"></a>
+				<div class="index-search">
+					<form action="" method="get" class="search-form">
+						<input type="text" class="search-box" name="" id="" placeholder="搜索你感兴趣的内容..." />
+						<button type="submit" class="search-button">
+							<span class="search-img"></span>
+						</button>
+					</form>
+				</div>
+				<div class="index-nav">
+					<ul>
+						<li class="nav-mainpage nav-li">
+							<a href="" class="nav-link">首页</a>
+						</li>
+						<li class="nav-li">
+							<a href="" class="nav-link nav-other-link">发现</a>
+						</li>
+						<li class="nav-li">
+							<a href="" class="nav-link nav-other-link" data-toggle="modal" data-target="#message">消息</a>
+						</li>
+					</ul>
+				</div>
+				<div class="index-user menu">
+					<ul>
+						<li>
+							<a href="" class="user-info">
+								<span>牛客</span>
+								<span class="user-portrait"></span>
+							</a>
+							<ul class="nav-dropdown">
+								<li class="sec-nav">
+									<a href="" class="btn-hover"><i class="nav-home nav-icon"></i>我的主页</a>
+								</li>
+								<li class="sec-nav">
+									<a href="" class="btn-hover"><i class="nav-mess nav-icon"></i>私信</a>
+								</li>
+								<li class="sec-nav last-nav">
+									<a href="" class="bottom-radius btn-hover"><i class="nav-out nav-icon"></i>退出</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<button type="button" class="index-question" data-toggle="modal" data-target="#exampleModal">提问</button>
+			</div>
+		</div>
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h5 class="modal-title" id="exampleModalLabel">提问</h5>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label for="recipient-name" class="control-label">标题:</label>
+								<input type="text" class="form-control" id="recipient-name">
+							</div>
+							<div class="form-group">
+								<label for="message-text" class="control-label">问题说明(可选):</label>
+								<div class="test-textarea" contenteditable="true"><br /></div>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+						<button type="button" class="btn btn-primary">发布</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="message" tabindex="-1" role="dialog" aria-labelledby="messageLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h5 class="modal-title" id="exampleModalLabel">消息</h5>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label for="recipient-name" class="control-label">接收人:</label>
+								<input type="text" class="form-control" id="recipient-name">
+							</div>
+							<div class="form-group">
+								<label for="message-text" class="control-label">内容:</label>
+								<div class="test-textarea" contenteditable="true"><br /></div>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary">发送</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-container">
+			<div class="main-head">
+				<div class="top"></div>
+				<div class="bottom">
+					<div class="bottom-container">
+						<div class="img-container">
+							<img src="../static/images/head.jpg" />
+							<div class="hide-img-container">
+								<img src="../static/images/相机.png" />
+								<div>修改我的头像</div>
+							</div>
+						</div>
+						<div class="inifo-container">
+							<div class="inifo-container-head">
+								<h2>
+									<span class="name">四月的小凡</span>
+									<span class="job">学生</span>
+								</h2>
+							</div>
+							<div class="inifo-container-body">
+								<div>
+									<label>居住地</label>
+									绵阳
+								</div>
+								<div>
+									<label>所在行业</label>
+									阿里巴巴
+								</div>
+							</div>
+							<div class="inifo-container-foot">
+								<button class="put-down">
+									<img src="../static/images/down.png" />
+									<span>查看详细资料</span>
+								</button>
+								<button class="edit-info">
+									编辑个人资料
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main-body">
+				<div class="left">
+					<div class="left-head">
+						<ul>
+							<li class="first-li">动态</li>
+							<li>回答</li>
+							<li>提问</li>
+							<li>文章</li>
+							<li>专栏</li>
+							<li>想法</li>
+							<li>更多</li>
+						</ul>
+					</div>
+					<div class="left-body">
+						<div class="first-container">
+							<div class="list-header">
+								<h2>我的动态</h2>
+							</div>
+							<div class="list-body">
+								<img src="../static/images/形状-图片.png" />
+								<div>
+									刚来知乎?去
+									<a href="#">关注我感兴趣的话题</a>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="list-header">
+								<h2>我的回答</h2>
+							</div>
+							<div class="list-body">
+								<img src="../static/images/形状-图片.png" />
+								<div>
+									刚来知乎?去
+									<a href="#">关注我感兴趣的话题</a>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="list-header">
+								<h2>我的提问</h2>
+							</div>
+							<div class="list-body">
+								<img src="../static/images/形状-图片.png" />
+								<div>
+									刚来知乎?去
+									<a href="#">关注我感兴趣的话题</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="right">
+					<div class="attention">
+						<a href="#">
+							关注了
+							<strong>0</strong>
+						</a>
+						<a href="#">
+							关注者
+							<strong>0</strong>
+						</a>
+					</div>
+					<div class="footer">
+						<ul>
+							<li>
+								<a href="#">建议反馈</a>
+								<a href="#">加入我们</a>
+							</li>
+							<li>
+								<a href="#">合作建议</a>
+								<a href="#">联系我们</a>
+							</li>
+						</ul>
+						<span id="copy">© Copyright 2019 47056.</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
+<script src="../static/script/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../static/script/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+	$(function(){
+		//头像处的修改头像功能
+		//stop()方法可以避免动画堆积
+		$(".hide-img-container").mouseenter(function(){
+			$(".hide-img-container").stop(true,false).animate({
+				opacity:"0.4",
+			},200);
+		});
+
+		$(".hide-img-container").mouseleave(function(){
+			$(".hide-img-container").stop(true,false).animate({
+				opacity:"0",
+			},200);
+		});
+		
+		//查看详细资料按钮点击事件
+		var cinfo = 0;
+		$(".put-down").click(function(){
+			cinfo++;
+			if(cinfo%2 == 1){
+				$(".inifo-container-body").slideDown();
+				$(".put-down").html("<img src='../static/images/up.png' /><span>收起详细资料</span>")
+			}else{
+				$(".inifo-container-body").slideUp();
+				$(".put-down").html("<img src='../static/images/down.png' /><span>查看详细资料</span>")
+			}
+		});
+		
+		//动态列表的选择
+		$(".left-head ul li").click(function(){
+			$(this).css({
+				"font-weight":"600",
+				"border-bottom":"2px solid #0084ff",
+			}).siblings().css({
+				"font-weight":"400",
+				"border-bottom":"none",
+
+			});
+			var i = $(this).index();
+			$(".left-body>div:eq("+i+")").css("display","block").siblings().css("display","none");
+		});
+		
+	});
+</script>
